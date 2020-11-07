@@ -23,7 +23,7 @@ public class GameOfLifeTest {
 	public void neighbours_are_one_or_less_then_dies() {
 		// given
 		initGrid();
-		grid[0] = false;
+		grid[0] = true;
 
 		// when
 		grid = nextTurn(grid);
@@ -42,7 +42,7 @@ public class GameOfLifeTest {
 	}
 
 	private boolean[] nextTurn(boolean[] grid) {
-				grid[0] = false;
+		grid[0] = false;
 
 		return grid;
 	}
