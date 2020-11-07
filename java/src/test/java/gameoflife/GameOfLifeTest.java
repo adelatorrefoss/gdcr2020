@@ -19,6 +19,20 @@ public class GameOfLifeTest {
 		assertFalse(grid[2]);
 	}
 
+	@Test
+	public void neighbours_are_one_or_less_then_dies() {
+		// given
+		initGrid();
+		grid[0] = false;
+
+		// when
+		grid = nextTurn(grid);
+
+		// then
+		assertFalse(grid[0]);
+		assertFalse(grid[1]);
+		assertFalse(grid[2]);
+	}
 
 	private void initGrid() {
 		grid =  new boolean[3];
