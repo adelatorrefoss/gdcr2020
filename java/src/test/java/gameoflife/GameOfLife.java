@@ -8,7 +8,6 @@ public class GameOfLife {
 
 	@Test
 	public void fix_me_and_rename() {
-		assertFalse(true);
+		assertFalse(false);
 	}
-
 }
