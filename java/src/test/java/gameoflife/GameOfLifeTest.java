@@ -4,11 +4,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertFalse;
 
-public class GameOfLife {
+public class GameOfLifeTest {
 
 	@Test
 	public void fix_me_and_rename() {
 		assertFalse(true);
 	}
-
 }
