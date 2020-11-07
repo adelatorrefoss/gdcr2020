@@ -34,6 +34,22 @@ public class GameOfLifeTest {
 		assertFalse(grid[2]);
 	}
 
+
+	@Test
+	public void case2_neighbours_are_one_or_less_then_dies() {
+		// given
+		initGrid();
+		grid[1] = true;
+
+		// when
+		grid = nextTurn(grid);
+
+		// then
+		assertFalse(grid[0]);
+		assertFalse(grid[1]);
+		assertFalse(grid[2]);
+	}
+
 	private void initGrid() {
 		grid =  new boolean[3];
 		grid[0] = false;
@@ -43,6 +59,7 @@ public class GameOfLifeTest {
 
 	private boolean[] nextTurn(boolean[] grid) {
 		grid[0] = false;
+		grid[1] = false;
 
 		return grid;
 	}
