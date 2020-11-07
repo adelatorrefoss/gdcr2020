@@ -8,6 +8,9 @@ public class GameOfLife {
 
 	@Test
 	public void fix_me_and_rename() {
-		assertFalse(false);
+		assertFalse(true);
 	}
 }
+
+
+// mvn test && git commit -am working || git reset --hard
