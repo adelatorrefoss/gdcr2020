@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 
-public class GameOfLife {
+public class GameOfLifeTest {
 
 	private boolean grid[];
 
@@ -19,6 +19,7 @@ public class GameOfLife {
 		assertFalse(grid[2]);
 	}
 
+
 	private void initGrid() {
 		grid =  new boolean[3];
 		grid[0] = false;
@@ -27,6 +28,7 @@ public class GameOfLife {
 	}
 
 	private boolean[] nextTurn(boolean[] grid) {
+		
 		return grid;
 	}
 }
