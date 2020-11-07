@@ -42,7 +42,8 @@ public class GameOfLifeTest {
 	}
 
 	private boolean[] nextTurn(boolean[] grid) {
-		
+				grid[0] = false;
+
 		return grid;
 	}
 }
